@@ -34,6 +34,9 @@ while True:
             myobj.save("audio.mp3")
             os.system("mpg321 audio.mp3")
 
+            # End bilp
+            os.system("mpg321 blip.mp3")
+
             # Init the last request.
             last_request = time.time()
         
@@ -55,6 +58,9 @@ while True:
             myobj = gTTS(text=result, lang=language, slow=False)
             myobj.save("audio.mp3")
             os.system("mpg321 audio.mp3")
+
+            # End bilp
+            os.system("mpg321 blip.mp3")
 
             # Init the last request
             last_request = time.time()
