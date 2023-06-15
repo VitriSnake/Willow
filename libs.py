@@ -5,8 +5,6 @@ import speech_recognition as sr
 def ask_gpt(messages, api_key, model="gpt-3.5-turbo"):    
     openai.api_key = api_key
 
-    print(messages)
-
     completion = openai.ChatCompletion.create(
         model=model, 
         messages=messages
